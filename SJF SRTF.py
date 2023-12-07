@@ -17,7 +17,7 @@ n = int(input("Enter the number of processes: "))
 
 # Creating a matrix for storing the Process Id, Burst Time, Arrival Time, Waiting Time, Turn Around Time
 mat = [[0 for j in range(5)] for i in range(n)]
-t, avg_wttime, avg_tatime = 0, 0, 0
+avg_wttime, avg_tatime = 0, 0
 
 print("Enter the Arrival Time and Burst Time of the processes:")
 
