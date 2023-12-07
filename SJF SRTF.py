@@ -4,7 +4,7 @@
 def find_shortest_remaining_time(time, n, remaining_time, arrival_time):
     min_time = float('inf')
     min_index = -1
-
+    #Menghitung apakah sisa waktu terkecil dari proses yang telah di intrupsi
     for i in range(n):
         if remaining_time[i] > 0 and arrival_time[i] <= time and remaining_time[i] < min_time:
             min_time = remaining_time[i]
@@ -43,7 +43,7 @@ while True:
         break
     
     remaining_time[index] -= 1
-
+    #menghitung waktu yang tersisa
     if remaining_time[index] == 0:
         mat[index][4] = time + 1 - mat[index][2]
         mat[index][3] = mat[index][4] - mat[index][1]
